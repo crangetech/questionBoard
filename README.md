@@ -25,10 +25,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-<<<<<<< HEAD
 [![MIT License][license-shield]][license-url]
-=======
->>>>>>> 9cb846de287ebf52c5b705fe47c1d9e9f12679c1
 
 
 <!-- PROJECT LOGO -->
@@ -36,10 +33,10 @@
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
 
-  <h3 align="center">Online Journal README</h3>
+  <h3 align="center">Question Board</h3>
 
   <p align="center">
-    Welcome to the Online Journal README, a great spot to get to know this project!
+    Welcome to the Question Board README, a great spot to get to know this project!
     <br />
     <a href="https://github.com/crangel93/online-journal"><strong>Explore the docs »</strong></a>
     <br />
