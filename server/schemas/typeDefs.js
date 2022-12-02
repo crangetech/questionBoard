@@ -38,7 +38,6 @@ type Question{
 }
 type mutation{
 postQuestion:(questionId: Number,questionText: String,,createdAt:Date,usernameId: Number,answers:[Answers]): Question
-
 }
 `
 
