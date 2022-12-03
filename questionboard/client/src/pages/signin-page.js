@@ -1,19 +1,21 @@
 import '.App.css';
 import Header from './components/Header-comp.js'
-import Register from './components/Register-comp.js'
+import Nav from './components/Nav-comp.js'
+import Signin from './components/Signin-comp.js'
 import Footer from './components/Footer-comp.js'
 
 
-function Register() {
+function Signin() {
     return(
-        <div className="register">
+        <div className="">
             <div>
             <Header />
+            <Nav />
             <Signin/>
             <Footer />
             </div>
         </div>
     );
 }
-export default Register;
+export default Signin;
 
