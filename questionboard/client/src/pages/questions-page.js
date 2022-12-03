@@ -1,21 +1,19 @@
 import '.App.css';
 import Header from './components/Header-comp.js'
-import Nav from './components/Nav-comp.js'
-import Signin from './components/Signin-comp.js'
+import Nav from '../components/Nav-comp'
 import Footer from './components/Footer-comp.js'
+import Questions from '../components/Questions-comp'
 
-
-function Signin() {
+function Questions() {
     return(
         <div className="">
             <div>
             <Header />
             <Nav />
-            <Signin/>
+            <Questions />
             <Footer />
             </div>
         </div>
     );
 }
-export default Signin;
-
+export default Questions;

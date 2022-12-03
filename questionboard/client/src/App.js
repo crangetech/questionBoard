@@ -8,7 +8,12 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Register from './pages/register-page.js';
+import Dashboard from './pages/dashboard-page';
+import Donate from './pages/donate-page';
+import Privacy from './pages/privacy-page';
+import Questions from './pages/questions-page.js';
+import Signin from './pages/signin-page.js';
+import Support from './pages/Support-page';
 // import / from '/';
 // import/ from '/';
 
@@ -42,6 +47,12 @@ function App() {
       <Router>
         <>
           <Navbar />
+          <Navbar />
+          <Navbar />
+          <Navbar />
+          <Navbar />
+          <Navbar />
+          
           <Routes>
             <Route 
               path="/" 

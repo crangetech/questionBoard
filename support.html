@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico">
-    <title>My Dashboard</title>
+    <title>Customer Support</title>
 </head>
+
 <body>
     <header>
         <h1>Question Board</h1>
-            <nav>
-              <ul>
+        <nav>
+            <ul>
                 <li><a href="./questions.html">Home</a></li>
                 <li><a href="./register.html">Register</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./support.html">Support</a></li>
                 <li><a href="./donate.html">Donate</a></li>
             </ul>
-            </nav>
+        </nav>
     </header>
 
-        <main>
-            <div>
-  <div className>
-    <h2 className>
-      Welcome to your Question Dashboard!
-    </h2>
-    <p className>
-      Have a question? Ask the community.
-    </p>
-    <form id>
-      <label htmlFor="title">What is your Question?</label>
-      <input type="text" name id className /><br />
-      <button>Post Question</button><br /><br />
-    </form>
-  </div>
-  <div className>
-    <h3 className>
-      Previously asked questions:
-    </h3>
-    {/* Table of previous questions can go here */}
-  </div>
+    <main>
+        <div className>
+  <h2>Support</h2>
+  <p className>
+    Do you have any questions? Fill out the form below.
+  </p>
+  <form id>
+    <label className="support" htmlFor="name">Enter your full name:</label>
+    <input type="text" placeholder="Full name" name="name" id="name" className="form-input" /><br />
+    <label className="support" htmlFor="email">Enter your email address:</label>
+    <input type="text" placeholder="Email address" name="email" id="email" className="form-input" /><br />
+    <label className="support" htmlFor="phone">Enter your contact number:</label>
+    <input type="text" placeholder="Phone number" name="phone" id="phone" className="form-input" /><br />
+    <label className="support" htmlFor="message">Enter your message:</label>
+    <textarea className="textarea" name="Message" rows={8} cols={30} defaultValue={""} />
+    <br /><button className="button-html">Submit</button><br /><br />
+  </form>
 </div>
 
+    </main>
 
-                
-
-        </main>
-
-        <footer class="">
-            <nav class="">
-              <ul>
+    <footer class="">
+        <nav class="">
+            <ul>
                 <li><a href="./questions.html">Home</a></li>
                 <li><a href="./register.html">Register</a></li>
                 <li><a href="./login.html">Login</a></li>
@@ -60,9 +55,10 @@
                 <li><a href="./termsandservice.html">Terms and Services</a></li>
                 <li><a href="./donate.html">Donate</a></li>
             </ul>
-            </nav>
-            
-        </footer>
+        </nav>
+
+    </footer>
 
 </body>
+
 </html>
