@@ -36,7 +36,6 @@ const startApolloServer = async (typeDefs, resolvers) => {
 
 startApolloServer(typeDefs, resolvers);
 
-app.use("/api", userRoutes);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html/'))
@@ -76,21 +75,6 @@ app.get('/forgot-password', (req, res) => {
 })
 
 
-// app.get('/viewAllEntries', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/viewAllEntries.html/'))
-// })
-// app.use('/api',indexRouter);
-//
-//
-// app.use((err,req,res,next)=>{
-//     err.statusCode=err.statusCode || 500;
-//     err.message=err.message || "Internal Server Error";
-//     res.status(err.statusCode).json({
-//         message: err.message,
-//     });
-//
-//
-//
 app.listen(PORT, () => {
     console.log('App listening on port ' + PORT);
     sequelize.sync({ force: false });
