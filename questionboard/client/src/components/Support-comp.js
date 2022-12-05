@@ -3,7 +3,7 @@ function Support() {
     return (
         <div className>
             <h2>Support</h2>
-            <p className>
+            <p className="register-section">
                 Do you have any questions? Fill out the form below.
             </p>
             <form id>

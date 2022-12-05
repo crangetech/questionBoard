@@ -1,6 +1,6 @@
 function Register() {
     return (
-        <div classname="register-section">
+        <div classname="reg">
             <center>
                 <h1> <header>Online Journal Login</header></h1>
                 <form id="login_form">

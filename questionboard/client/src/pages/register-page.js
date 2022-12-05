@@ -6,7 +6,7 @@ import Footer from './components/Footer-comp.js'
 
 function Register() {
     return(
-        <div className="register">
+        <div className="register-section">
             <div>
             <Header />
             <Register />
