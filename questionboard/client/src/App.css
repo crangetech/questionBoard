@@ -198,3 +198,102 @@ footer{
  position: relative;
  text-align: right;
 }
+
+
+.donate-button {
+  background-color: #0057bb;
+  color: white;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px 5px;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .donate-button:hover {
+  background-color: white;
+  color: #0057bb;
+  }
+  
+  .privacy-content h3 {
+  size: 20px;
+  font-weight: bold;
+  margin: 3px;
+  }
+  .privacy-text {
+  size: 16px;
+  padding: 3px;
+  text-align:justify;
+  line-height: 20px;
+  margin: 5px;
+  }
+  
+  .h2-head {
+  size: 16px;
+  font-weight: bold;
+  }
+  .support-text {
+  size: 16px;
+  
+  }
+  
+  .signup-button {
+  background-color: blue;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .signup-button:hover {
+  background-color: white;
+  color: blue;
+  }
+  
+  .comment-button {
+  background-color: #4CAF50;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .comment-button:hover {
+  background-color: white;
+  color: #4CAF50;
+  }
+  
+  .report-button {
+  background-color: #f44336;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .report-button:hover {
+  background-color: white;
+  color: #f44336;
+  }
+  
+  .support-button {
+  background-color: #0057bb;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .support-button:hover {
+  background-color: white;
+  color: #0057bb;
+  }
