@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>Question Board</title>
 </head>
+
 <body>
     <header>
-        <h1>Question Board</h1>
-            <nav>
-                <ul>
-                    <li><a href="./questions.html">Home</a></li>
-                    <li><a href="./register.html">Register</a></li>
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./support.html">Support</a></li>
-                    <li><a href="./donate.html">Donate</a></li>
-                </ul>
-            </nav>
+        <h1 class="logo">Question Board</h1>
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li><a href="./questions.html">Home</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./support.html">Support</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+            </ul>
+        </nav>
     </header>
 
-        <main>
+    <main>
+        <center>
+        <div class="donation-content">
+            <h2 class="h2-head">Donate to The Make-A-Wish Foundation</h2><br>
+            <p>Your donation will help contribute to granting a wish for a child with a life-threatening illness.</p><br>
+            <p>Together, we can make a difference.</p><br>
+            <button class="donate-button" onclick="window.location.href='https://donate.stripe.com/test_9AQaG4bFW8Iz7Fm8ww';">
+                Donate Now
+              </button>
+        </div>
+        </center>
 
-           <div className>
-  <h2>Donate to The Make-A-Wish Foundation</h2>
-  <form className>
-    <input type="button" onclick="window.location.href='https://donate.stripe.com/test_9AQaG4bFW8Iz7Fm8ww';" defaultValue="Donate Now" />
-  </form>
-  <p>Your donation will help contribute to granting a wish for a child with a life-threatening illness.</p>
-  <p>Together, we can make a difference</p>
-</div>
 
+    </main>
 
-        </main>
-
-        <footer class="">
-            <nav class="">
-                <ul>
-                    <ul>
-                        <li><a href="./questions.html">Home</a></li>
-                        <li><a href="./register.html">Register</a></li>
-                        <li><a href="./login.html">Login</a></li>
-                        <li><a href="./support.html">Support</a></li>
-                        <li><a href="./privacypolicy.html">Privacy Policy</a></li>
-                        <li><a href="./termsandservice.html">Terms and Services</a></li>
-                        <li><a href="./donate.html">Donate</a></li>
-                    </ul>
-            </nav>
-            
-        </footer>
+    <footer class="footer-area">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="./questions.html">Home</a></li>
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./support.html">Support</a></li>
+                <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="./termsandservice.html">Terms and Services</a></li>
+                <li><a href="./donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    
+    </footer>
 
 </body>
+
 </html>
