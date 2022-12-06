@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import '../App.css';
 import Header from '../components/Header-comp.js'
 import Nav from '../components/Nav-comp'
