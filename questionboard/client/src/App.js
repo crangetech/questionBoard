@@ -8,18 +8,17 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Dashboard from './components/dashboard-comp.js';
-import Donate from './components/donate-comp.js';
-import Privacy from './components/privacy-comp.js';
-import Questions from './components/questions-comp.js';
-import Signin from './components/signin-comp.js';
-import Support from './components/Support-comp.js';
-import Terms from './components/terms-comp.js';
-import Register from './components/register-comp.js';
-import Questions from './components/questions-comp.js';
-import Footer from './components/footer-comp.js';
-import Header from './components/header-comp.js';
-import Nav from './components/Nav-comp.js';
+import Dashboard from './pages/dashboard-page.js';
+import Donate from './pages/donate-page.js';
+import Privacy from './pages/privacy-page.js';
+import Questions from './pages/questions-page.js';
+import Signin from './pages/signin-page.js';
+import Support from './pages/Support-page.js';
+import Terms from './pages/terms-page.js';
+import Register from './pages/register-page.js';
+import Questions from './pages/questions-page.js';
+
+
 // import / from '/';
 // import/ from '/';
 
@@ -51,13 +50,12 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+      <Route 
+              path="/header" 
+              element={<Header />} 
+            /> 
         <>
-          <Navbar />
-          <Navbar />
-          <Navbar />
-          <Navbar />
-          <Navbar />
-          <Navbar />
+       
           
           <Routes>
             <Route 
@@ -76,10 +74,7 @@ function App() {
               path="/donate" 
               element={<Donate />} 
             />
-                      <Route 
-              path="/header" 
-              element={<Header />} 
-            /> 
+         
                   <Route 
               path="/nav" 
               element={<Nav />} 
@@ -109,13 +104,14 @@ function App() {
                  
                  
                  
-                  <Route 
-              path="/footer" 
-              element={<Footer />} 
-            />
+       
            
           </Routes>
         </>
+        <Route 
+              path="/footer" 
+              element={<Footer />} 
+            />
       </Router>
     </ApolloProvider>
   );
