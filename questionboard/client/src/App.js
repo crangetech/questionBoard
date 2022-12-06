@@ -48,17 +48,20 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <>
+        <div>
+
+          <Routes>
+            
+          <Register />
           <Dashboard/>
           <Privacy />
           <Questions/>
-          <Register />
           <Signin />
           <Terms/>
           <Support/>
           <Donate />
           
-          <Routes>
+          
             <Route 
               path="/" 
               element={<Register />} 
@@ -72,7 +75,7 @@ function App() {
               element={<h1 className="display-2">Wrong page!</h1>} 
             />
           </Routes>
-        </>
+        </div>
       </Router>
     </ApolloProvider>
   );

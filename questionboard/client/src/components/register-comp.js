@@ -2,7 +2,7 @@ function RegisterComp() {
     return (
         <div classname="reg">
             <center>
-                <h1> <header>Online Journal Login</header></h1>
+                <h1> <header>Online Journal Signup</header></h1>
                 <form id="login_form">
                  <center>
                     <label className="login-forms">Username</label> <br /><input className="input" type="text" name="username" id="username" /><br />
