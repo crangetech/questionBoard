@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, } 
+from 'react-router-dom';
 import {
   ApolloClient,
   InMemoryCache,
@@ -48,14 +49,14 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <>
-          <Donate />
+          <Dashboard/>
           <Privacy />
           <Questions/>
           <Register />
           <Signin />
           <Terms/>
           <Support/>
-          <Dashboard/>
+          <Donate />
           
           <Routes>
             <Route 

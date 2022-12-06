@@ -9,7 +9,6 @@ function DonatePage() {
         <div className="">
             <div>
             <Header />
-            <Nav />
             <Donate />
             <Footer />
             </div>
