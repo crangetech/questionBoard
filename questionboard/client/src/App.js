@@ -8,7 +8,18 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Register from './pages/register-page.js';
+import Dashboard from './components/dashboard-comp.js';
+import Donate from './components/donate-comp.js';
+import Privacy from './components/privacy-comp.js';
+import Questions from './components/questions-comp.js';
+import Signin from './components/signin-comp.js';
+import Support from './components/Support-comp.js';
+import Terms from './components/terms-comp.js';
+import Register from './components/register-comp.js';
+import Questions from './components/questions-comp.js';
+import Footer from './components/footer-comp.js';
+import Header from './components/header-comp.js';
+import Nav from './components/Nav-comp.js';
 // import / from '/';
 // import/ from '/';
 
@@ -42,19 +53,67 @@ function App() {
       <Router>
         <>
           <Navbar />
+          <Navbar />
+          <Navbar />
+          <Navbar />
+          <Navbar />
+          <Navbar />
+          
           <Routes>
             <Route 
               path="/" 
               element={<Register />} 
             />
             <Route 
-              path="/saved" 
-              element={<SavedBooks />} 
+              path="/sign-in" 
+              element={<Signin />} 
             />
-            <Route 
-              path="*" 
-              element={<h1 className="display-2">Wrong page!</h1>} 
+                <Route 
+              path="/dashboard" 
+              element={<Dashboard />} 
             />
+                  <Route 
+              path="/donate" 
+              element={<Donate />} 
+            />
+                      <Route 
+              path="/header" 
+              element={<Header />} 
+            /> 
+                  <Route 
+              path="/nav" 
+              element={<Nav />} 
+            />
+                  <Route 
+              path="/privacy" 
+              element={<Privacy/>} 
+            />
+                  <Route 
+              path="/questions" 
+              element={<Questions />} 
+            />
+                  <Route 
+              path="/register" 
+              element={<Register />} 
+            />
+                <Route 
+              path="/support" 
+              element={<Support />} 
+            />
+                       <Route 
+              path="/terms" 
+              element={<Terms />} 
+            />
+                 
+                 
+                 
+                 
+                 
+                  <Route 
+              path="/footer" 
+              element={<Footer />} 
+            />
+           
           </Routes>
         </>
       </Router>

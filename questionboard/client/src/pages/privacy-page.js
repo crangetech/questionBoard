@@ -1,21 +1,20 @@
 import '.App.css';
 import Header from './components/Header-comp.js'
-import Nav from './components/Nav-comp.js'
-import Signin from './components/Signin-comp.js'
+import Nav from '../components/Nav-comp'
 import Footer from './components/Footer-comp.js'
+import Privacy from '../components/Policy-comp'
 
-
-function Signin() {
+function Privacy() {
     return(
         <div className="">
             <div>
             <Header />
             <Nav />
-            <Signin/>
+            <Privacy />
             <Footer />
             </div>
         </div>
     );
 }
-export default Signin;
+export default Privacy;
 
