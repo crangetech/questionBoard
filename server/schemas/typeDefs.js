@@ -5,40 +5,42 @@ type User{
     username: String
     email: String
 }
-type mutation{
-    login(email: String, password: String): Auth
-    addUser(username: String, email: String, password: String): Auth
-}
-type Answer{
-    answerId: ID
-    questionId: Number
-    answerText: String
-    createdAt: Date
-    usernameId: Number
-    upvotes: Number
-}
-type mutation{
-postAnswer(answerId: Number,questionId: Number,answerText:String,createdAt:Date,usernameId: Number,upvotes:Number): Answer
-      
 
-
-addUpvote(answerId: Number,upvotes: Number) : Answer
+type Auth{
+token: ID
+user: User
 }
-type query{
-   getQuestion(questionId: Number): Question
 
-   getAnswer(answerId: Number): Answer
-}
 type Question{
     questionId: ID
     questionText: String
-    createdAt:Date
-    usernameId: Number
+    usernameId: ID
     answers:[Answer] 
 }
-type mutation{
-postQuestion:(questionId: Number,questionText: String,,createdAt:Date,usernameId: Number,answers:[Answers]): Question
+type Answer{
+    answerId: ID
+    questionId: ID
+    answerText: String
+    usernameId: ID
+    upvotes: Int
+}
+type Mutation{
+    login(email: String, password: String): Auth
+    addUser(username: String, email: String, password: String): Auth
+    addQuestion(questionId: ID, questionText: String, usernameId: ID, answers: Int): Question
+    addAnswer(answerId: ID, questionId: ID, answerText: String, usernameId: ID, upvotes: ID): Answer
+    addUpvote(answerId: ID, upvotes: Int): Answer
+}
+type Query{
+   getQuestion(questionId: ID): Question
+   getAnswer(answerId: ID): Answer
+   me: User
+   user: User
+   users: [User]
+   questions: [Question]
+   question: Question
 }
 `
+
 
 module.exports = typeDefs;
