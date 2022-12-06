@@ -39,7 +39,6 @@ type Mutation{
     addUpvote(answerId: Number,upvotes: Number) : Answer
     postQuestion:(questionId: Number,questionText: String,,createdAt:Date,usernameId: Number,answers:[Answers]): Question
 }
-
 `
 
 module.exports = typeDefs;
