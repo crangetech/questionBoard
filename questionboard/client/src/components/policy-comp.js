@@ -1,4 +1,4 @@
-function Privacy() {
+function PrivacyComp() {
   return (
     <div className="privacy-content">
       <h2>Privacy Policy</h2>
@@ -271,4 +271,4 @@ function Privacy() {
 
   )
 }
-export default Privacy
+export default PrivacyComp

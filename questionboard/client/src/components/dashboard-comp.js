@@ -1,4 +1,4 @@
-function Dashboard() {
+function DashboardComp() {
     return (
         <div>
             <div className>
@@ -25,4 +25,4 @@ function Dashboard() {
 
     )
 }
-export default Dashboard
+export default DashboardComp

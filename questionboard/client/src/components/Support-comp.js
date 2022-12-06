@@ -1,7 +1,7 @@
-function Support() {
+function SupportComp() {
 
     return (
-        <div className>
+        <div>
             <h2>Support</h2>
             <p className="register-section">
                 Do you have any questions? Fill out the form below.
@@ -21,4 +21,4 @@ function Support() {
 
     )
 }
-export default Support
+export default SupportComp

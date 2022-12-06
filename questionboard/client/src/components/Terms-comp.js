@@ -1,4 +1,4 @@
-function Terms() {
+function TermsComp() {
   return (
     <article className="terms-content">
       <h2 className="h2-head">
@@ -195,4 +195,4 @@ function Terms() {
 
   )
 }
-export default Terms
+export default TermsComp

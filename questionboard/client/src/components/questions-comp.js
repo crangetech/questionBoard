@@ -1,4 +1,4 @@
-function Questions() {
+function QuestionsComp() {
     return (
         <div className="homepage-questions">
             <center>
@@ -40,4 +40,4 @@ function Questions() {
 
     )
 }
-export default Questions
+export default QuestionsComp

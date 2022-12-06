@@ -1,4 +1,4 @@
-function Footer (){
+function FooterComp (){
     return(
       <footer class="">
             <nav class="">
@@ -15,4 +15,4 @@ function Footer (){
 
     )
 }
-export default Footer
+export default FooterComp

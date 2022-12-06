@@ -1,4 +1,4 @@
-function Signin() {
+function SigninComp() {
     return (
         <div className>
             <h2>Log In</h2>
@@ -12,7 +12,7 @@ function Signin() {
     )
 }
 
-export default Signin
+export default SigninComp
 
 
 

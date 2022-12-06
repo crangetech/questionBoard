@@ -8,12 +8,14 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Dashboard from './pages/dashboard-page';
-import Donate from './pages/donate-page';
-import Privacy from './pages/privacy-page';
-import Questions from './pages/questions-page.js';
-import Signin from './pages/signin-page.js';
+import Terms from './pages/Terms-page'
+import Dashboard from './pages/Dashboard-page';
+import Donate from './pages/Donate-page';
+import Privacy from './pages/Privacy-page';
+import Questions from './pages/Questions-page.js';
+import Signin from './pages/Signin-page.js';
 import Support from './pages/Support-page';
+import Register from './pages/Register-page';
 // import / from '/';
 // import/ from '/';
 
@@ -46,22 +48,24 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <>
-          <Navbar />
-          <Navbar />
-          <Navbar />
-          <Navbar />
-          <Navbar />
-          <Navbar />
+          <Donate />
+          <Privacy />
+          <Questions/>
+          <Register />
+          <Signin />
+          <Terms/>
+          <Support/>
+          <Dashboard/>
           
           <Routes>
             <Route 
               path="/" 
               element={<Register />} 
             />
-            <Route 
+            {/* <Route 
               path="/saved" 
-              element={<SavedBooks />} 
-            />
+              element={< />} 
+            /> */}
             <Route 
               path="*" 
               element={<h1 className="display-2">Wrong page!</h1>} 

@@ -1,10 +1,10 @@
-import '.App.css';
-import Header from './components/Header-comp.js'
-import Register from './components/Register-comp.js'
-import Footer from './components/Footer-comp.js'
+import '../App.css';
+import Header from '../components/Header-comp.js'
+import Register from '../components/Register-comp.js'
+import Footer from '../components/Footer-comp.js'
 
 
-function Register() {
+function RegisterPage() {
     return(
         <div className="register-section">
             <div>
@@ -15,5 +15,5 @@ function Register() {
         </div>
     );
 }
-export default Register;
+export default RegisterPage;
 

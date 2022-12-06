@@ -1,4 +1,4 @@
-function Nav(){
+function NavComp(){
 
     return (
         <nav>
@@ -18,4 +18,4 @@ function Nav(){
     </nav>
     )
 }
-export default Nav
+export default NavComp

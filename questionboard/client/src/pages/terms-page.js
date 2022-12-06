@@ -1,10 +1,10 @@
-import '.App.css';
-import Header from './components/Header-comp.js'
+import '../App.css';
+import Header from '../components/Header-comp.js'
 import Nav from '../components/Nav-comp'
-import Footer from './components/Footer-comp.js'
-import Terms from '../components/Term-comp'
+import Footer from '../components/Footer-comp.js'
+import Terms from '../components/Terms-comp'
 
-function Terms() {
+function TermsPage() {
     return(
         <div className="">
             <div>
@@ -16,5 +16,5 @@ function Terms() {
         </div>
     );
 }
-export default Terms;
+export default TermsPage;
 

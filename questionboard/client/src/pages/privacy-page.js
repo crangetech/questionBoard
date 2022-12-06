@@ -1,10 +1,10 @@
-import '.App.css';
-import Header from './components/Header-comp.js'
+import '../App.css';
+import Header from '../components/Header-comp.js'
 import Nav from '../components/Nav-comp'
-import Footer from './components/Footer-comp.js'
+import Footer from '../components/Footer-comp.js'
 import Privacy from '../components/Policy-comp'
 
-function Privacy() {
+function PrivacyPage() {
     return(
         <div className="">
             <div>
@@ -16,5 +16,5 @@ function Privacy() {
         </div>
     );
 }
-export default Privacy;
+export default PrivacyPage;
 

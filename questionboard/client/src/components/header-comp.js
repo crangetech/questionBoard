@@ -1,5 +1,5 @@
-import Nav from './Nav'
-function Header(){
+import Nav from './Nav-comp'
+function HeaderComp(){
 
     return (
         <header className="head">
@@ -8,4 +8,4 @@ function Header(){
   </header>
     )
 }
-export default Header
+export default HeaderComp

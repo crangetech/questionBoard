@@ -1,4 +1,4 @@
-function Donate() {
+function DonateComp() {
     return (
         <div className="donation-content">
             <h2 className="h2-head">Donate to The Make-A-Wish Foundation</h2><br />
@@ -11,4 +11,4 @@ function Donate() {
 
     )
 }
-export default Donate
+export default DonateComp

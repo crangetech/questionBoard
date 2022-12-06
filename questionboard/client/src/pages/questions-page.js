@@ -1,10 +1,10 @@
-import '.App.css';
-import Header from './components/Header-comp.js'
+import '../App.css';
+import Header from '../components/Header-comp.js'
 import Nav from '../components/Nav-comp'
-import Footer from './components/Footer-comp.js'
+import Footer from '../components/Footer-comp.js'
 import Questions from '../components/Questions-comp'
 
-function Questions() {
+function QuestionsPage() {
     return(
         <div className="">
             <div>
@@ -16,4 +16,4 @@ function Questions() {
         </div>
     );
 }
-export default Questions;
+export default QuestionsPage;

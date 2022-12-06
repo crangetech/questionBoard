@@ -1,4 +1,4 @@
-function Register() {
+function RegisterComp() {
     return (
         <div classname="reg">
             <center>
@@ -14,4 +14,4 @@ function Register() {
     )
 }
 
-export default Register
+export default RegisterComp
