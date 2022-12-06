@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 function SupportComp() {
 
     return (
         <div>
             <h2>Support</h2>
             <p className="register-section">
+=======
+function Support() {
+
+    return (
+        <div className>
+            <h2>Support</h2>
+            <p className>
+>>>>>>> cfceb140dc3c1fc5fb6a182334f4c86d8afc6658
                 Do you have any questions? Fill out the form below.
             </p>
             <form id>
@@ -21,4 +30,8 @@ function SupportComp() {
 
     )
 }
+<<<<<<< HEAD
 export default SupportComp
+=======
+export default Support
+>>>>>>> cfceb140dc3c1fc5fb6a182334f4c86d8afc6658

@@ -52,7 +52,11 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+<<<<<<< HEAD
   /* background-image:url('./Assets/images/hot-air-balloon-736879.jpg'); */
+=======
+  background-image:url(/assets/images/hot-air-balloon-736879.jpg);
+>>>>>>> cfceb140dc3c1fc5fb6a182334f4c86d8afc6658
   background-position: center;
   }
 
@@ -197,6 +201,7 @@ footer{
 .footer{
  position: relative;
  text-align: right;
+<<<<<<< HEAD
 }
 
 
@@ -297,3 +302,6 @@ footer{
   background-color: white;
   color: #0057bb;
   }
+=======
+}
+>>>>>>> cfceb140dc3c1fc5fb6a182334f4c86d8afc6658

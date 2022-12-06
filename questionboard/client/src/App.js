@@ -9,6 +9,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
+<<<<<<< HEAD
 import Terms from './pages/Terms-page'
 import Dashboard from './pages/Dashboard-page';
 import Donate from './pages/Donate-page';
@@ -17,6 +18,19 @@ import Questions from './pages/Questions-page.js';
 import Signin from './pages/Signin-page.js';
 import Support from './pages/Support-page';
 import Register from './pages/Register-page';
+=======
+import Dashboard from './pages/dashboard-page.js';
+import Donate from './pages/donate-page.js';
+import Privacy from './pages/privacy-page.js';
+import Questions from './pages/questions-page.js';
+import Signin from './pages/signin-page.js';
+import Support from './pages/Support-page.js';
+import Terms from './pages/terms-page.js';
+import Register from './pages/register-page.js';
+import Questions from './pages/questions-page.js';
+
+
+>>>>>>> cfceb140dc3c1fc5fb6a182334f4c86d8afc6658
 // import / from '/';
 // import/ from '/';
 
@@ -48,34 +62,66 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div>
-
-          <Routes>
-            
-          <Register />
-          <Dashboard/>
-          <Privacy />
-          <Questions/>
-          <Signin />
-          <Terms/>
-          <Support/>
-          <Donate />
-          
-          
+      <Route 
+              path="/header" 
+              element={<Header />} 
+            /> 
+        <>
+                 
             <Route 
               path="/" 
               element={<Register />} 
             />
-            {/* <Route 
-              path="/saved" 
-              element={< />} 
-            /> */}
             <Route 
-              path="*" 
-              element={<h1 className="display-2">Wrong page!</h1>} 
+              path="/sign-in" 
+              element={<Signin />} 
             />
+                <Route 
+              path="/dashboard" 
+              element={<Dashboard />} 
+            />
+                  <Route 
+              path="/donate" 
+              element={<Donate />} 
+            />
+         
+                  <Route 
+              path="/nav" 
+              element={<Nav />} 
+            />
+                  <Route 
+              path="/privacy" 
+              element={<Privacy/>} 
+            />
+                  <Route 
+              path="/questions" 
+              element={<Questions />} 
+            />
+                  <Route 
+              path="/register" 
+              element={<Register />} 
+            />
+                <Route 
+              path="/support" 
+              element={<Support />} 
+            />
+                       <Route 
+              path="/terms" 
+              element={<Terms />} 
+            />
+                 
+                 
+                 
+                 
+                 
+       
+           
           </Routes>
-        </div>
+        </>
+        <Route 
+              path="/footer" 
+              element={<Footer />} 
+            />
       </Router>
     </ApolloProvider>
   );
