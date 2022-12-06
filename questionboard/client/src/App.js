@@ -9,7 +9,6 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-<<<<<<< HEAD
 import Terms from './pages/Terms-page'
 import Dashboard from './pages/Dashboard-page';
 import Donate from './pages/Donate-page';
@@ -18,19 +17,8 @@ import Questions from './pages/Questions-page.js';
 import Signin from './pages/Signin-page.js';
 import Support from './pages/Support-page';
 import Register from './pages/Register-page';
-=======
-import Dashboard from './pages/dashboard-page.js';
-import Donate from './pages/donate-page.js';
-import Privacy from './pages/privacy-page.js';
-import Questions from './pages/questions-page.js';
-import Signin from './pages/signin-page.js';
-import Support from './pages/Support-page.js';
-import Terms from './pages/terms-page.js';
-import Register from './pages/register-page.js';
-import Questions from './pages/questions-page.js';
 
 
->>>>>>> cfceb140dc3c1fc5fb6a182334f4c86d8afc6658
 // import / from '/';
 // import/ from '/';
 
@@ -62,11 +50,10 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-      <Route 
-              path="/header" 
-              element={<Header />} 
-            /> 
-        <>
+        <Routes>
+            
+            
+            <>
                  
             <Route 
               path="/" 
@@ -85,10 +72,7 @@ function App() {
               element={<Donate />} 
             />
          
-                  <Route 
-              path="/nav" 
-              element={<Nav />} 
-            />
+          
                   <Route 
               path="/privacy" 
               element={<Privacy/>} 
@@ -109,19 +93,9 @@ function App() {
               path="/terms" 
               element={<Terms />} 
             />
-                 
-                 
-                 
-                 
-                 
-       
-           
-          </Routes>
-        </>
-        <Route 
-              path="/footer" 
-              element={<Footer />} 
-            />
+            </>
+              
+        </Routes>
       </Router>
     </ApolloProvider>
   );
