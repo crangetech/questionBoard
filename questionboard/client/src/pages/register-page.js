@@ -3,14 +3,13 @@ import Header from '../components/Header-comp.js'
 import Register from '../components/Register-comp.js'
 import Footer from '../components/Footer-comp.js'
 
-
 function RegisterPage() {
-    return(
+    return (
         <div className="register-section">
             <div>
-            <Header />
-            <Register />
-            <Footer />
+                <Header />
+                <Register />
+                <Footer />
             </div>
         </div>
     );
