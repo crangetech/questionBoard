@@ -48,46 +48,44 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <>
-          <Routes>
-            <Route
-              path="/"
-              element={<Register />}
-            />
-            <Route
-              path="/signin"
-              element={<Signin />}
-            />
-            <Route
-              path="/terms"
-              element={<Terms />}
-            />
-            <Route
-              path="/dashboard"
-              element={<Dashboard />}
-            />
-            <Route
-              path="/donate"
-              element={<Donate />}
-            />
-            <Route
-              path="/privacy"
-              element={<Privacy />}
-            />
-            <Route
-              path="/questions"
-              element={<Questions />}
-            />
-            <Route
-              path="/support"
-              element={<Support />}
-            />
-            <Route
-              path="*"
-              element={<h1 className="display-2">Wrong page!</h1>}
-            />
-          </Routes>
-        </>
+        <Routes>
+          <Route
+            path="/"
+            element={<Register />}
+          />
+          <Route
+            path="/signin"
+            element={<Signin />}
+          />
+          <Route
+            path="/terms"
+            element={<Terms />}
+          />
+          <Route
+            path="/dashboard"
+            element={<Dashboard />}
+          />
+          <Route
+            path="/donate"
+            element={<Donate />}
+          />
+          <Route
+            path="/privacy"
+            element={<Privacy />}
+          />
+          <Route
+            path="/questions"
+            element={<Questions />}
+          />
+          <Route
+            path="/support"
+            element={<Support />}
+          />
+          <Route
+            path="*"
+            element={<h1 className="display-2">Wrong page!</h1>}
+          />
+        </Routes>
       </Router>
     </ApolloProvider>
   );
