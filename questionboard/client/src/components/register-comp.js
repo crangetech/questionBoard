@@ -1,18 +1,81 @@
+import React, { useState } from 'react';
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
+import Auth from '../utils/auth';
+
 function RegisterComp() {
+    const [formState, setFormState] = useState({ username: '', email: '', password: '' });
+    const [addUser, { error }] = useMutation(ADD_USER);
+
+    // update state based on form input changes
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
+    };
+
+    // submit form
+    const handleFormSubmit = async event => {
+        event.preventDefault();
+
+        // use try/catch instead of promises to handle errors
+        try {
+            const { data } = await addUser({
+                variables: { ...formState }
+            });
+
+            Auth.login(data.addUser.token);
+        } catch (e) {
+            console.error(e);
+        }
+    };
+
     return (
-        <div classname="reg">
-            <center>
-                <h1> <header>Online Journal Login</header></h1>
-                <form id="login_form">
-                 <center>
-                    <label className="login-forms">Username</label> <br /><input className="input" type="text" name="username" id="username" /><br />
-                    <label className="login-forms">Password</label><br />  <input className="input" type="password" name="password" id="password" /><br /><br />
-                    <button className="button-html">Login</button><br /><br />
-                    <a href="./forgot-password.html">Forgot Password?</a>
-                 </center>
-                </form>
-            </center>
-        </div>
+        <main className='flex-row justify-center mb-4'>
+            <div className='col-12 col-md-6'>
+                <div className='card'>
+                    <h4 className='card-header'>Sign Up</h4>
+                    <div className='card-body'>
+                        <form onSubmit={handleFormSubmit}>
+                            <input
+                                className='form-input'
+                                placeholder='Your username'
+                                name='username'
+                                type='username'
+                                id='username'
+                                value={formState.username}
+                                onChange={handleChange}
+                            />
+                            <input
+                                className='form-input'
+                                placeholder='Your email'
+                                name='email'
+                                type='email'
+                                id='email'
+                                value={formState.email}
+                                onChange={handleChange}
+                            />
+                            <input
+                                className='form-input'
+                                placeholder='******'
+                                name='password'
+                                type='password'
+                                id='password'
+                                value={formState.password}
+                                onChange={handleChange}
+                            />
+                            <button className='btn d-block w-100' type='submit'>
+                                Submit
+                            </button>
+                        </form>
+                        {error && <div>Sign up failed</div>}
+                    </div>
+                </div>
+            </div>
+        </main>
     )
 }
 
