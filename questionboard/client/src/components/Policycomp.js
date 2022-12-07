@@ -1,5 +1,6 @@
 function PrivacyComp() {
   return (
+    <main>
     <div className="privacy-content">
       <h2>Privacy Policy</h2>
       <p className="privacy-text">
@@ -267,7 +268,7 @@ function PrivacyComp() {
         https://crangel93.github.io/online-journal/
       </p>
     </div>
-
+    </main>
 
   )
 }

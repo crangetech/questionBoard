@@ -5,10 +5,10 @@ function NavComp(){
     return (
         <nav>
       <ul>
-        <li><Link to="/dashboard">Home</Link></li>
+        <li className="dropbtn w3-display-topmiddle"><Link to="/">Home</Link></li>
         <li className="dropdown">
-          <a href="/" className="dropbtn">Menu </a>
-          <div className="dropdown-content">
+        <li className="dropbtn ">Menu</li>
+          <div className="dropdown-content ">
             
             <Link to="/Register">Register</Link>
             <Link to="/signin">Sign In</Link>
@@ -17,7 +17,7 @@ function NavComp(){
             
           </div>
         </li>
-        <li style={{float: 'right'}}><a href="/">Contact</a></li>
+        <li className="dropbtn w3-display-topright"><a href="/">Contact</a></li>
       </ul>
     </nav>
     )

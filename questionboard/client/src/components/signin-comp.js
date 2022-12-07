@@ -6,8 +6,8 @@ import Auth from '../utils/auth';
 function SigninComp(props) {
     const [formState, setFormState] = useState({ email: '', password: '' });
     const [login, { error }] = useMutation(LOGIN_USER);
-    const endpoint =
-        process.env.REACT_APP_API_ENDPOINT || 'https://localhost:3001'
+    // const endpoint =
+    //     process.env.REACT_APP_API_ENDPOINT || 'https://localhost:3001'
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -67,6 +67,7 @@ function SigninComp(props) {
                     </div>
                 </div>
             </div>
+        
         </main>
     )
 }

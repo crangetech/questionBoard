@@ -57,10 +57,6 @@ function App() {
             element={<Terms />}
           />
           <Route
-            path="/dashboard"
-            element={<Dashboard />}
-          />
-          <Route
             path="/donate"
             element={<Donate />}
           />
@@ -79,6 +75,10 @@ function App() {
           <Route
             path="*"
             element={<h1 className="display-2">Wrong page!</h1>}
+          />
+          <Route
+            path="/"
+            element={<Dashboard />}
           />
         </Routes>
       </Router>
