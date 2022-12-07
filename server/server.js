@@ -1,8 +1,8 @@
 const path = require("path");
-const userRoutes = require('./controlers/api/user-routes.js');
+// const userRoutes = require('./controlers/api/user-routes.js');
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 const { ApolloServer } = require("apollo-server-express");
 
@@ -20,10 +20,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client"))
-});
-
 const startApolloServer = async (typeDefs, resolvers) => {
     await server.start()
     server.applyMiddleware({ app })
@@ -33,53 +29,11 @@ const startApolloServer = async (typeDefs, resolvers) => {
         })
     })
 };
-
 startApolloServer(typeDefs, resolvers);
 
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html/'))
-})
-app.get('/dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, '/dashboard.html/'))
-})
-app.get('/entry', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/entry.html/'))
-})
-app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/signup.html/'))
-})
-app.get('/support', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/support.html/'))
-})
-app.get('/terms-conditions', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/terms-conditions.html/'))
-})
-app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/register.html/'))
-})
-app.get('/viewAllEntries', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/viewAllEntries.html/'))
-})
-app.get('/privacy-policy', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/privacy-policy.html/'))
-})
-app.get('/loggedOut', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/loggedOut.html/'))
-})
-app.get('/signup', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/signup.html/'))
-})
-app.get('/forgot-password', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/forgot-password.html/'))
-})
 
 
-app.listen(PORT, () => {
-    console.log('App listening on port ' + PORT);
-    sequelize.sync({ force: false });
-
-});
 
 
 
