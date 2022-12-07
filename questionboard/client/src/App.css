@@ -196,7 +196,7 @@ footer{
 
 .footer{
  position: relative;
- text-align: right;
+ text-align: left;
 }
 
 
@@ -296,4 +296,8 @@ footer{
   .support-button:hover {
   background-color: white;
   color: #0057bb;
+  }
+
+  .form-input {
+    font-size: 20px;
   }
