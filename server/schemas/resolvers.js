@@ -17,8 +17,6 @@ const resolvers = {
         users: async () => {
             return User.find()
                 .select('-__v -password')
-                .populate('friends')
-                .populate('thoughts');
         },
         user: async (parent, { username }) => {
             return User.findOne({ username })
@@ -39,9 +37,9 @@ const resolvers = {
                 throw new AuthenticationError('Incorrect credentials');
             }
 
-            const correctPw = await user.isCorrectPassword(password);
+            const isPasswordCorrect = (user.password === password)
 
-            if (!correctPw) {
+            if (!isPasswordCorrect) {
                 throw new AuthenticationError('Incorrect credentials');
             }
 

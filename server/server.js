@@ -2,7 +2,7 @@ const path = require("path");
 // const userRoutes = require('./controlers/api/user-routes.js');
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3001;
 
 const { ApolloServer } = require("apollo-server-express");
 
