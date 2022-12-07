@@ -10,7 +10,6 @@ function SigninPage() {
         <div className="">
             <div>
             <Header />
-            <Nav />
             <Signin/>
             <Footer />
             </div>

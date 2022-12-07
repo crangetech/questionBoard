@@ -1,6 +1,7 @@
 function SupportComp() {
 
     return (
+        <center>
         <div>
             <h2>Support</h2>
             <p className="register-section">
@@ -18,6 +19,7 @@ function SupportComp() {
                 <br /><button className="button-html">Submit</button><br /><br />
             </form>
         </div>
+        </center>
 
     )
 }

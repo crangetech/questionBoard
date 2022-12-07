@@ -6,7 +6,8 @@ import Auth from '../utils/auth';
 function SigninComp(props) {
     const [formState, setFormState] = useState({ email: '', password: '' });
     const [login, { error }] = useMutation(LOGIN_USER);
-
+    const endpoint =
+        process.env.REACT_APP_API_ENDPOINT || 'https://localhost:3001'
     // update state based on form input changes
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -33,6 +34,7 @@ function SigninComp(props) {
     };
 
     return (
+        
         <main className='flex-row justify-center mb-4'>
             <div className='col-12 col-md-6'>
                 <div className='card'>

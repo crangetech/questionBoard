@@ -8,8 +8,7 @@ function QuestionsPage() {
     return(
         <div className="">
             <div>
-            <Header />
-            <Nav />
+            <Header />            
             <Questions />
             <Footer />
             </div>

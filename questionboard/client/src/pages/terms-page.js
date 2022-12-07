@@ -8,8 +8,7 @@ function TermsPage() {
     return(
         <div className="">
             <div>
-            <Header />
-            <Nav />
+            <Header />           
             <Terms />
             <Footer />
             </div>

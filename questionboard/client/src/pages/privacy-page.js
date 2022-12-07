@@ -8,8 +8,7 @@ function PrivacyPage() {
     return(
         <div className="">
             <div>
-            <Header />
-            <Nav />
+            <Header />        
             <Privacy />
             <Footer />
             </div>

@@ -45,12 +45,12 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/"
+            path="/register"
             element={<Register />}
           />
           <Route
             path="/signin"
-            element={<Signin />}
+            element={<Signin/>}
           />
           <Route
             path="/terms"

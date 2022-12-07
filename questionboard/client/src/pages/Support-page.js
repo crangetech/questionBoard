@@ -10,7 +10,6 @@ function SupportPage() {
         <div className="tomatos">
             <div>
             <Header />
-            <Nav />
             <Support/>
             <Footer />
             </div>
