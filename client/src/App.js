@@ -8,7 +8,6 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
 import Terms from './pages/Terms-page'
 import Dashboard from './pages/Dashboard-page';
 import Donate from './pages/Donate-page';
@@ -19,12 +18,10 @@ import Support from './pages/Support-page';
 import Register from './pages/Register-page';
 // import / from '/';
 // import/ from '/';
-
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
   uri: 'http://localhost:3001/graphql',
 });
-
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
@@ -37,33 +34,27 @@ const authLink = setContext((_, { headers }) => {
     },
   };
 });
-
 const client = new ApolloClient({
   // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
-
 function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
         <Routes>
           <Route
-            path="/"
+            path="/register"
             element={<Register />}
           />
           <Route
             path="/signin"
-            element={<Signin />}
+            element={<Signin/>}
           />
           <Route
             path="/terms"
             element={<Terms />}
-          />
-          <Route
-            path="/dashboard"
-            element={<Dashboard />}
           />
           <Route
             path="/donate"
@@ -85,10 +76,13 @@ function App() {
             path="*"
             element={<h1 className="display-2">Wrong page!</h1>}
           />
+          <Route
+            path="/"
+            element={<Dashboard />}
+          />
         </Routes>
       </Router>
     </ApolloProvider>
   );
 }
-
 export default App;

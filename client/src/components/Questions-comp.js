@@ -1,5 +1,6 @@
 function QuestionsComp() {
     return (
+        <main>
         <div className="homepage-questions">
             <center>
                 <h2 className="h2-head">What is Your Question?</h2>
@@ -36,7 +37,7 @@ function QuestionsComp() {
                     </article><br /><br />
                 </div></center>
         </div>
-
+        </main>
 
     )
 }

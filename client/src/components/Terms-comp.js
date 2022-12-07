@@ -1,5 +1,6 @@
 function TermsComp() {
   return (
+    <main>
     <article className="terms-content">
       <h2 className="h2-head">
         Terms and Conditions
@@ -191,7 +192,7 @@ function TermsComp() {
         not be given any legal import.
       </p>
     </article>
-
+    </main>
 
   )
 }

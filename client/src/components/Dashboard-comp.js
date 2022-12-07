@@ -1,5 +1,6 @@
 function DashboardComp() {
     return (
+        <main>
         <div>
             <div className>
                 <h2 className>
@@ -21,6 +22,7 @@ function DashboardComp() {
                 {/* Table of previous questions can go here */}
             </div>
         </div>
+        </main>
 
 
     )
