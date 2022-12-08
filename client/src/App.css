@@ -259,11 +259,13 @@ footer{
     margin: 10px;
     border: 1px solid black;
     outline: none;
+   
   }
 
+   
   #support{
     display: flexbox;
-    
+   
   }
 
   support{
@@ -307,5 +309,17 @@ padding: 10px;
   width: 30%;
   align-items: center;
   text-align: center;
+}
+
+.containers{
+  background-color: rgba(255, 255, 255, 0.411);
+  border: 2px white solid;
+  align-items: left;
+  text-align: center;
+  width: 500px;
+  margin-top: 40px;
+  color: black;
+  height: 90%;
+
 }
   

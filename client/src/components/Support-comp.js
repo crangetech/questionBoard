@@ -10,7 +10,7 @@ function SupportComp() {
                     </p>
                     <form id="support">
                         {/* <label className="support" htmlFor="name">Enter your full name:</label> */}
-
+                <div className="input-boxes">
                         <input type="text" placeholder="Full name" name="name" id="name" className="form-input " /><br />
 
                         {/* <label className="support " htmlFor="email">Enter your email address:</label> */}
@@ -20,8 +20,8 @@ function SupportComp() {
                         {/* <label className="support " htmlFor="phone">Enter your contact number:</label> */}
 
                         <input type="text" placeholder="Phone number" name="phone" id="phone" className="form-input " /><br />
-
-                        <hr></hr>
+                </div>
+                        <hr/>
 
                         <label className="support " htmlFor="message">Enter your message:</label>
 
