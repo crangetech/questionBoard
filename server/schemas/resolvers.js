@@ -22,6 +22,13 @@ const resolvers = {
             return User.findOne({ username })
                 .select('-__v -password')
         },
+        questions: async (parent, { username }) => {
+            const params = username ? { username } : {};
+            return Question.find(params).sort({ createdAt: -1 });
+          },
+          question: async (parent, { _id }) => {
+            return Question.findOne({ _id });
+          }
     },
     Mutation: {
         addUser: async (parent, args) => {
@@ -46,6 +53,34 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
+        addQuestion: async (parent, args, context) => {
+            if (context.user) {
+              const question = await Question.create({ ...args, username: context.user.username });
+      
+              await User.findByIdAndUpdate(
+                { _id: context.user._id },
+                { $push: { questions: question._id } },
+                { new: true }
+              );
+      
+              return question;
+            }
+      
+            throw new AuthenticationError('You need to be logged in!');
+          },
+          addAnswer: async (parent, { questionId, reactionBody }, context) => {
+            if (context.user) {
+              const updatedQuestion = await Question.findOneAndUpdate(
+                { _id: questionId },
+                { $push: { reactions: { reactionBody, username: context.user.username } } },
+                { new: true, runValidators: true }
+              );
+      
+              return updatedQuestion;
+            }
+      
+            throw new AuthenticationError('You need to be logged in!');
+          },
     }
 };
 
