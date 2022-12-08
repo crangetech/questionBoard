@@ -17,6 +17,8 @@ body{
   min-height: 100%;
   /* background-image:url('./Assets/images/hot-air-balloon-736879.jpg'); */
   background-position: center;
+  position: relative;
+  background-image: url(./images/hot-air-balloon-736879.jpg);
   }
 
 html{
@@ -134,15 +136,18 @@ main{
   width: 90vw;
   margin: 0 auto;
   padding: 30px 20px;
-  min-height: calc(100vh - 211px - 58px);
+  padding-top: 1px ;
+  padding-bottom: 100px;
 }
 
 footer{
-  background-color: #b5bdc6;
   text-align: center;
-  color: black;
-  padding: 20px;
+  background-color: #3c3a3a;
   width: 100%;
+  padding: 20px;
+  color: #f9f9f9;
+  position: absolute;
+
 }
 
 
@@ -249,10 +254,58 @@ footer{
 
   .form-input {
     font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    outline: none;
   }
 
+  #support{
+    display: flexbox;
+    
+  }
+
+  support{
+padding: 10px;
+  }
  
+  .sign-up-form{
+    width: 300px;
+    box-shadow: 0 0 3px rgb(0,0,0,0.3);
+    background: #ffff;
+    padding: 20px;
+    margin: 1% auto 0;
+    text-align: center;
+  }
 
+  .hero{
+    color: red;
+
+  }
+
+.button{
+  color: red;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none ;
+  cursor: pointer;
+}
+
+.button-log{
+  color: black;
+}
   
-
+.log{
+  display: flex;
+  padding-top: 50px;
+  margin: auto;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+}
   

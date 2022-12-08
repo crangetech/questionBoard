@@ -35,8 +35,8 @@ function SigninComp(props) {
 
     return (
         
-        <main className='flex-row justify-center mb-4'>
-            <div className='col-12 col-md-6'>
+        <main className='flex-row justify-center mb-4 '>
+            <div className='d-flex justify-content-center log'>
                 <div className='card'>
                     <h4 className='card-header'>Login</h4>
                     <div className='card-body'>
@@ -59,7 +59,7 @@ function SigninComp(props) {
                                 value={formState.password}
                                 onChange={handleChange}
                             />
-                            <button className='btn d-block w-100' type='submit'>
+                            <button className='button button-log' type='submit'>
                                 Submit
                             </button>
                         </form>
