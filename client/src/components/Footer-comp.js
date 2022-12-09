@@ -43,6 +43,7 @@ function FooterComp() {
 
                 </div>
             </div>
+            |
         </footer>
 
     )
