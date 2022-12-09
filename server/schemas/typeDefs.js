@@ -13,21 +13,21 @@ user: User
 type Question{
     questionId: ID
     questionText: String
-    usernameId: ID
+    userId: ID
     answers:[Answer] 
 }
 type Answer{
     answerId: ID
     questionId: ID
     answerText: String
-    usernameId: ID
+    userId: ID
     upvotes: Int
 }
 type Mutation{
     login(email: String, password: String): Auth
     addUser(username: String, email: String, password: String): Auth
-    addQuestion(questionId: ID, questionText: String, usernameId: ID, answers: Int): Question
-    addAnswer(answerId: ID, questionId: ID, answerText: String, usernameId: ID, upvotes: ID): Answer
+    addQuestion(questionText: String): Question
+    addAnswer(answerId: ID, questionId: ID, answerText: String, userId: ID, upvotes: ID): Answer
     addUpvote(answerId: ID, upvotes: Int): Answer
 }
 type Query{

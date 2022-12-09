@@ -34,7 +34,7 @@ function SigninComp(props) {
     };
 
     return (
-        
+
         <main className='flex-row justify-center mb-4 '>
             <div className='d-flex justify-content-center log'>
                 <div className='card'>
@@ -67,7 +67,7 @@ function SigninComp(props) {
                     </div>
                 </div>
             </div>
-        
+
         </main>
     )
 }

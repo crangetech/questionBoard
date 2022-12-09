@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const answerSchema=require('./Answer')
+const answerSchema = require('./Answer')
 //const User= require('./User')
 // Schema to create Post model
 const questionSchema = new Schema(
@@ -7,25 +7,25 @@ const questionSchema = new Schema(
     questionId: {
       type: Number,
       default: true,
-      required:true,
+      required: true,
     },
 
     questionText: {
       type: String,
-     Required:true,
-     minLength:1,
-     maxLength:999,
+      Required: true,
+      minLength: 1,
+      maxLength: 999,
     },
     createdAt: {
       type: Date,
       default: Date.now,
     },
-    usernameId: {
+    _id: {
       type: Number,
       default: true,
-      required:true,
+      required: true,
     },
-    answers:[answerSchema]
+    answers: [answerSchema]
 
 
   },

@@ -22,3 +22,11 @@ mutation addUser($username: String!, $email: String!, $password: String!){
     }
 }
 `
+
+export const ADD_QUESTION = gql`
+mutation addQuestion($questionText: String!){
+    addQuestion(questionText: $questionText){
+        questionText
+    }
+}
+`
