@@ -138,15 +138,17 @@ main{
   padding: 30px 20px;
   padding-top: 1px ;
   padding-bottom: 100px;
+  
 }
 
 footer{
   text-align: center;
-  background-color: #3c3a3a;
+  background-color: #3c3a3aad;
   width: 100%;
   padding: 20px;
-  color: #f9f9f9;
+  color: #faf9f9;
   position: absolute;
+  border: white solid 2px;
 
 }
 
@@ -163,6 +165,7 @@ footer{
   text-align: center;
   transition-duration: 0.4s;
   cursor: pointer;
+ margin-left: 250px;
   }
   
   .donate-button:hover {
@@ -323,3 +326,34 @@ padding: 10px;
 
 }
   
+.donate{
+  background-color: rgba(255, 255, 255, 0.588);
+
+}
+
+.terms-content {
+  background: rgba(111, 109, 109, 0.7);
+}
+.privacy-content {
+  background: rgba(111, 109, 109, 0.7);
+}
+
+.privacy-content h3 {
+  size: 20px;
+  font-weight: bold;
+  margin: 3px;
+  color: black;
+  }
+  .privacy-text {
+  size: 16px;
+  padding: 3px;
+  text-align:justify;
+  line-height: 20px;
+  margin: 5px;
+  color: black;
+  }
+  .h2-head {
+  size: 16px;
+  font-weight: bold;
+  color: black;
+  }
