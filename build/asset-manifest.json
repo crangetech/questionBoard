@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e263b89.css",
+    "main.js": "/static/js/main.9ecf4fe3.js",
+    "static/js/787.c8a220b3.chunk.js": "/static/js/787.c8a220b3.chunk.js",
+    "static/media/hot-air-balloon-736879.jpg": "/static/media/hot-air-balloon-736879.20ec0baec5a52f6168d5.jpg",
+    "index.html": "/index.html",
+    "main.2e263b89.css.map": "/static/css/main.2e263b89.css.map",
+    "main.9ecf4fe3.js.map": "/static/js/main.9ecf4fe3.js.map",
+    "787.c8a220b3.chunk.js.map": "/static/js/787.c8a220b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e263b89.css",
+    "static/js/main.9ecf4fe3.js"
+  ]
+}

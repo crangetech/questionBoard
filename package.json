@@ -1,4 +1,5 @@
 {
+  "homepage": "http://diegop2022.github.io/questionboard",
   "name": "questionboard",
   "version": "1.0.0",
   "description": "",
@@ -8,7 +9,9 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/diegop2022/deep-thoughts#readme",
   "devDependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^7.6.0",
+    "gh-pages": "^4.0.0"
   }
 }
