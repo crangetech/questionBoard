@@ -1,0 +1,359 @@
+
+* {
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+html,
+body{
+  flex: auto;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /* background-image:url('./Assets/images/hot-air-balloon-736879.jpg'); */
+  background-position: center;
+  position: relative;
+  background-image: url(./images/hot-air-balloon-736879.jpg);
+  }
+
+html{
+  box-sizing: border-box;
+}
+
+.logo{
+position: relative;
+}
+
+.nav-bar:hover{
+  background-color: #3c3a3a;
+  color: white;
+}
+
+
+
+
+
+.login{
+  
+  flex: auto;
+  flex-wrap: wrap;
+  font-size: 20px;
+  border: rgb(166, 146, 146) 2px solid;
+  margin-top: 100px;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(128, 128, 128, 0.423);
+
+}
+.dropbtn{
+flex: auto;
+flex-wrap: wrap;
+border: gray solid 2px;
+background-color: rgb(211, 209, 209);
+font-size: 20px;
+margin: 0;
+}
+
+.dropbtn{
+  margin: 2px;
+  padding: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+}
+
+li, a, .dropbtn {
+  display: inline-block;
+  color: rgb(26, 25, 25);
+  text-align: center;
+  text-decoration: none;
+  
+  
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(66, 66, 66);
+  color: #f9f9f9;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:rgb(66, 66, 66);
+  color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+input, button{
+  flex: auto;
+  flex-wrap: wrap;
+  display: inline ;
+  align-items: center;
+  text-align: center;
+}
+
+.login-button{
+  flex: auto;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.login-button:hover{
+  flex: auto;
+  flex-wrap: wrap;
+  background-color: rgb(66, 66, 66);
+  color: white;
+}
+
+main{
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  padding-top: 1px ;
+  padding-bottom: 100px;
+  
+}
+
+footer{
+  text-align: center;
+  background-color: #3c3a3aad;
+  width: 100%;
+  padding: 20px;
+  color: #faf9f9;
+  position: absolute;
+  border: white solid 2px;
+
+}
+
+
+
+
+
+.donate-button {
+  background-color: #0057bb;
+  color: white;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px 5px;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+ margin-left: 250px;
+  }
+  
+  .donate-button:hover {
+  background-color: white;
+  color: #0057bb;
+  }
+  
+  .privacy-content h3 {
+  size: 20px;
+  font-weight: bold;
+  margin: 3px;
+  }
+  .privacy-text {
+  size: 16px;
+  padding: 3px;
+  text-align:justify;
+  line-height: 20px;
+  margin: 5px;
+  }
+  
+  .h2-head {
+  size: 16px;
+  font-weight: bold;
+  }
+  .support-text {
+  size: 16px;
+  
+  }
+  
+  .signup-button {
+  background-color: blue;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .signup-button:hover {
+  background-color: white;
+  color: blue;
+  }
+  
+  .comment-button {
+  background-color: #4CAF50;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .comment-button:hover {
+  background-color: white;
+  color: #4CAF50;
+  }
+  
+  .report-button {
+  background-color: #f44336;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .report-button:hover {
+  background-color: white;
+  color: #f44336;
+  }
+  
+  .support-button {
+  background-color: #0057bb;
+  font-size: 16px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+  .support-button:hover {
+  background-color: white;
+  color: #0057bb;
+  }
+
+  .form-input {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    outline: none;
+   
+  }
+
+   
+  #support{
+    display: flexbox;
+   
+  }
+
+  support{
+padding: 10px;
+  }
+ 
+  .sign-up-form{
+    width: 300px;
+    box-shadow: 0 0 3px rgb(0,0,0,0.3);
+    background: #ffff;
+    padding: 20px;
+    margin: 1% auto 0;
+    text-align: center;
+  }
+
+  .hero{
+    color: red;
+
+  }
+
+.button{
+  color: red;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  outline: none ;
+  cursor: pointer;
+}
+
+.button-log{
+  color: black;
+}
+  
+.log{
+  display: flex;
+  padding-top: 50px;
+  margin: auto;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+}
+
+.containers{
+  background-color: rgba(255, 255, 255, 0.411);
+  border: 2px white solid;
+  align-items: left;
+  text-align: center;
+  width: 500px;
+  margin-top: 40px;
+  color: black;
+  height: 90%;
+
+}
+  
+.donate{
+  background-color: rgba(255, 255, 255, 0.588);
+
+}
+
+.terms-content {
+  background: rgba(111, 109, 109, 0.7);
+}
+.privacy-content {
+  background: rgba(111, 109, 109, 0.7);
+}
+
+.privacy-content h3 {
+  size: 20px;
+  font-weight: bold;
+  margin: 3px;
+  color: black;
+  }
+  .privacy-text {
+  size: 16px;
+  padding: 3px;
+  text-align:justify;
+  line-height: 20px;
+  margin: 5px;
+  color: black;
+  }
+  .h2-head {
+  size: 16px;
+  font-weight: bold;
+  color: black;
+  }
