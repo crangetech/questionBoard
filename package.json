@@ -7,7 +7,7 @@
   "scripts": {
     "server": "node server/server.js",
     "client": "cd client/ && npm start",
-    "start": "npx concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "start": "npx concurrently \"node server/server.js\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build",
