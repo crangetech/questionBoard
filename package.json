@@ -5,14 +5,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "node server/server.js",
-    "client": "cd client/ && npm start",
-    "start": "npx concurrently \"node server/server.js\" \"cd client && npm start\"",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "heroku-postbuild": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
