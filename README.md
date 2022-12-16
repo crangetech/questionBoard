@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="./assets/css/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./Assets/css/images/logo.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Question Forum README</h3>
 
