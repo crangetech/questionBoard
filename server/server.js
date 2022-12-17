@@ -1,3 +1,4 @@
+require ("dotenv").config();
 const path = require("path");
 // const userRoutes = require('./controlers/api/user-routes.js');
 const express = require("express");
